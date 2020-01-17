@@ -216,6 +216,8 @@ __Setup check in:__
 - [ ] __Collaborator:__ Pull in the newly reconciled change with `git fetch` and `git pull origin master`
 - [ ] __Collaborator:__ Check the results with `cat mars.txt`
 
+### References:
+- [Pro Git book](https://git-scm.com/book/en/v2)
 
 ## Open Science
 
