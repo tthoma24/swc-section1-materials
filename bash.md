@@ -1,3 +1,13 @@
+# The Unix Shell
+## January 16-17, 2020
+https://columbiaswc.github.io/2020-01-16-columbia-section-1/
+
+contact: rob lane / rob@cs.columbia.edu
+
+unix helpers: axinia radeva / ar2667@columbia.edu, alan crosswell / alan@columbia.edu, rahim hashim / rahim.hashim@columbia.edu, and teddy thomas / tthoma24@columbia.edu
+
+Special thanks to https://twitter.com/mariinyrop for this notebook layout, as well as the slides that I reuse shamelessly. -Teddy
+
 ### Table of Contents
 
 + [Introducing the Shell](#introducing-the-shell)
@@ -5,8 +15,6 @@
 + [Working with Files and Directories](#working-with-files-and-directories)
 + [Pipes and Filters](#pipes-and-filters)
 + [Loops](#loops)
-
-# The Unix Shell
 
 ## Introducing the Shell
 
@@ -16,6 +24,7 @@
 - Read-evaluate-print-loop (REPL)
 - Command, flag, argument
 - Flexibility and automation
+- Mac users: macOS 10.15 now uses a different shell, zsh, as the default. You want to use bash with this workshop. More details at https://support.apple.com/en-us/HT208050
 
 
 #### Try
@@ -140,14 +149,30 @@ Move a file
 #### Questions:
 - How can I combine existing commands to do new things?
 
-
+#### Try
+- [ ] Go back to `data-shell` by checking where you are `pwd`and using `cd`
+- [ ] Use the grep command to look for all .pdb files from ls -la output (Hint: Use a pipe `|`)
 
 
 ## Loops
 
-
 #### Questions:
 - How can I perform the same actions on many different files?
+
+#### Notes:
+We covered this very quickly, but we can do loops like we do in Python. For example
+
+`for x in basilisk.dat minotaur.dat unicorn.dat
+  do
+      head -n 2 $x | tail -n 1
+ done`
+ 
+ 
+ ## Further Resources
+ - https://swcarpentry.github.io/shell-novice/reference/
+ - https://linuxconfig.org/bash-scripting-tutorial-for-beginners
+ - https://www.tldp.org/LDP/Bash-Beginners-Guide/html/
+ - https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je
 
 
 
