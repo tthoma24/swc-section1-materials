@@ -1,4 +1,14 @@
-# Contents
+# Version Control with Git
+## January 16-17, 2020
+https://columbiaswc.github.io/2020-01-16-columbia-section-1/
+
+contact: teddy thomas / tthoma24@columbia.edu and alan crosswell (since he saved me from my subway delays) / alan@columbia.edu
+
+git helpers: alan, and rob lane / rob@cs.columbia.edu
+
+Special thanks to https://twitter.com/mariinyrop for this notebook layout, as well as the slides that I reuse shamelessly. -Teddy
+
+### Table of Contents
 - [Setup](#setup)
 - [Version Control with Git](#version-control-with-git)
   + [Automated Version Control](#automated-version-control)
@@ -14,6 +24,7 @@
   + [Hosting](#hosting)
   + [Exploring History](#exploring-history-at-the-end-if-theres-time)
 
+
 # Setup
 
 __Setup check in:__
@@ -24,13 +35,6 @@ __Setup check in:__
 - [ ] Do you have a [GitHub account](https://github.com/join)?
 - [ ] Do you have 2 color post-its?
 
-
-
-
-
-# Version Control with Git
-
-
 ## Automated Version Control
 
 
@@ -40,6 +44,7 @@ __Setup check in:__
 #### Notes:
 - Version control – keeps track of changes and allows for greater control over them
 - Manages collaboration and change conflicts
+- Microsoft Office's track changes, or Google Docs, all have some rudimentary version control
 
 
 ## Setting Up Git
@@ -49,8 +54,10 @@ __Setup check in:__
 - How do I get set up to use Git?
 
 #### Notes:
-- Git is the software, GitHub is a popular *service* for hosting content that is version controlled by Git
-- Your local Git needs to be configured to work with your GitHub account
+- Git is the software, GitHub is a popular *service* for hosting content that is version controlled by Git.
+- There are other Git services on the web, such as Gitlab (which CUIT uses), Atlassian Bitbucket, and GitBucket.
+- Your local Git needs to be configured to work with your GitHub account.
+- Note: If you want your email to private on GitHub, you may encounter some difficulty if you already made commits. See here: 
 
 #### Activity:
 - [ ] Configure Git to use your user name with `git config --global user.name "your-username"`
@@ -88,9 +95,10 @@ __Setup check in:__
 - How do I record notes about what changes I made and why?
 
 #### Notes:
-- Adding and committing
+- Adding vs committing
 - Commit messages
 - Reading the commit history
+- Graphic on git flow: http://ndpsoftware.com/git-cheatsheet.html#loc=index;
 
 #### Activity:
 
@@ -131,8 +139,9 @@ __Setup check in:__
 - How can I tell Git to ignore files I don’t want to track?
 
 #### Notes:
+- We didn't cover this in class
 - There will often be files you don't want Git to track, for security or efficiency reasons
-- Ignored files, directory, and file patterns are listed in a `.gitignore` file
+- Ignored files, directory, and file patterns are listed in a special hidden file, a `.gitignore` file
 
 #### Activity:
 - [ ] Make sure we're still in `~/Desktop/planets` with `pwd`
@@ -154,8 +163,9 @@ __Setup check in:__
 
 #### Notes:
 - Repository remotes (origin)
-- Git Push
-- Git Pull
+- Git Push to send changes up from your laptop
+- Git Pull to pull changes down from your Github
+- Git Clone to setup a remote repository locally your laptop you don't already have
 
 #### Activity:
 - [ ] Log into [GitHub](https://github.com)
@@ -192,6 +202,7 @@ __Setup check in:__
 - [ ] __Owner:__ Pull in the new changes from the remote repository on GitHub with `git pull origin master`
 - [ ] __Owner and Collaborator:__ switch roles and add another planet
 
+We did this. It worked! I hope it was fun.
 
 
 ## Conflicts
@@ -200,6 +211,8 @@ __Setup check in:__
 - What do I do when my changes conflict with someone else’s?
 
 #### Notes:
+- Again, we didn't cover this in class
+- When working with collaborators, conflicts are inevitable, and can get a little hairy to resolve.
 - When working on the same files, collaborators can create content conflicts.
 - Version control with Git provides means for managing and reconciling conflicts
 - Use `git fetch` and `git pull` often to avoid/preempt conflicts
@@ -222,7 +235,12 @@ __Setup check in:__
 #### Questions:
 - How can version control help me make my work more open?
 
-
+#### Notes:
+- We discussed this a bit, it's useful to be able to share work so you don't have to reinvent the wheel
+- For example, I checked in my Python notebook during class
+- I'm also sharing these materials with you through Git, and you can see the history of changes as well as make changes yourself
+- Science and academia in general are collaborative - remember Alan's "Sharing is caring"
+- https://www.eff.org/issues/open-access
 
 
 ## Licensing
@@ -230,6 +248,21 @@ __Setup check in:__
 #### Questions:
 - What licensing information should I include with my work?
 
+#### Notes:
+- We discussed this only a tad
+- Licenses give specific permissions on what someone can do with your work
+- Open source and open access are good, open communities are even better - giving back and sharing with others
+- I am not a lawyer (IANAL), this is not legal advice: Read the license terms before you contribute or use software
+
+#### Resources on Licenses
+Again, IANAL
+Some further resources (in order of what Teddy finds least biased and militant to most):
+- https://choosealicense.com/licenses/
+- https://tldrlegal.com
+- https://opensource.org/licenses
+- https://www.eff.org/wp/dangerous-terms-users-guide-eulas
+- https://www.fsf.org/licensing/education
+- https://www.gnu.org/licenses/license-list.en.html
 
 
 
@@ -246,6 +279,12 @@ __Setup check in:__
 #### Questions:
 - Where should I host my version control repositories?
 
+#### Answers:
+- Largely up to you!
+- Make it accessible for your community
+- Remember the license and any other restrictions you're under (esp. with CU code/data)
+- GitHub, Gitlab, Bitbucket, all have Git implementations that you might be interested in. We use GitHub because it's popular, but you should make a choice that works for you!
+
 
 ## Exploring History (at the end, if there's time)
 
@@ -254,6 +293,19 @@ __Setup check in:__
 - How do I review my changes?
 - How can I recover old versions of files?
 
+#### Notes:
+- We didn't really get to this
+- We showed that there is a history of files, and we can see what changed
+- It is possible to rewind and fast-forward time, and recover old versions. See the lesson plan for details.
+
+
+## Further Resources
+- https://swcarpentry.github.io/git-novice/reference.html
+- https://enterprise.github.com/downloads/en/github-flow-cheatsheet.pdf
+- https://education.github.com/git-cheat-sheet-education.pdf
+- https://enterprise.github.com/downloads/en/markdown-cheatsheet.pdf
+- https://about.gitlab.com/blog/2014/09/29/gitlab-flow/
+- And, lastly, when shit gets real: https://ohshitgit.com
 
 > __Full Tutorial:__ <https://swcarpentry.github.io/git-novice/>
 
