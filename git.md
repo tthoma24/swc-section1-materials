@@ -142,13 +142,14 @@ __Setup check in:__
 - We didn't cover this in class
 - There will often be files you don't want Git to track, for security or efficiency reasons
 - Ignored files, directory, and file patterns are listed in a special hidden file, a `.gitignore` file
+- I've included a sample .gitignore file, which ignores any Jupyter notebook checkpoint files, as well as the stuff.csv generated in our Jupyter notebook.OB
 
 #### Activity:
 - [ ] Make sure we're still in `~/Desktop/planets` with `pwd`
 - [ ] Make a new directory with `mkdir results`
 - [ ] Add a few files with `touch a.dat b.dat results/a.out results/b.out`
 - [ ] Run `git status`
-- [ ] Make a `.gitignore` file with `nano .gitignore` with `*.dat` on the first line and `results/` on the second line.
+- [ ] Edit the `.gitignore` file with `nano .gitignore` , putting `*.dat` on the first line and `results/` on the second line.
 - [ ] Print out the file's content with `cat .gitignore`
 - [ ] Run `git status` again
 - [ ] Add and commit the `.gitignore` file with `git add .gitignore` and `git commit -m 'ignore data files and results folder'`
